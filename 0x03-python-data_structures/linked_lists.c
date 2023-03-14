@@ -36,7 +36,6 @@ listint_t *new;
 listint_t *current;
 
 current = *head;
-
 new = malloc(sizeof(listint_t));
 if (new == NULL)
 return (NULL);
@@ -64,7 +63,6 @@ return (new);
 void free_listint(listint_t *head)
 {
 listint_t *current;
-
 while (head != NULL)
 {
 current = head;

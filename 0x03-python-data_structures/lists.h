@@ -1,16 +1,15 @@
 #ifndef LISTS_H
 #define LISTS_H
-
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- */
+* struct listint_s - singly linked list
+* @n: integer
+* @next: points to the next node
+*
+* Description: singly linked list node structure
+*/
 typedef struct listint_s
 {
 int n;
@@ -23,4 +22,3 @@ void free_listint(listint_t *head);
 int is_palindrome(listint_t **head);
 
 #endif /* LISTS_H */
-
