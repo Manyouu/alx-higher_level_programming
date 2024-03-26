@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 def islower(c):
-    if ord(c) > 96 and ord(c) < 123:
-        return True
-    else return False
+    # Check if the character is within the lowercase ASCII range
+    return ord('a') <= ord(c) <= ord('z')
+
+# Example usage:
+print(islower('a'))  # True
+print(islower('A'))  # False
+print(islower('z'))  # True
+print(islower('Z'))  # False
